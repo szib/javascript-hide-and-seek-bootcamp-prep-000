@@ -2,6 +2,6 @@ function getFirstSelector(selector) {
   return document.querySelector(selector)
 }
 
-function nestedTarget() {
-  return document.getElementById('nested').getElementByClass('target')
+function nestedTarget(target, nested) {
+  return document.querySelector(`#${nested}`).querySelectorAll(`.${target}`)
 }
