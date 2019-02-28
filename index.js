@@ -9,7 +9,6 @@ function nestedTarget(target, nested) {
 function increaseRankBy(n) {
   var rankedLists = document.querySelectorAll('.ranked-list li')
   for(var i = 0; i<rankedLists.length; i++) {
-    console.log(parseInt(rankedLists[i].innerHTML) + n)
     rankedLists[i].innerHTML = parseInt(rankedLists[i].innerHTML) + n
   }
 }
@@ -17,7 +16,7 @@ function increaseRankBy(n) {
 function deepestChild() {
   var currentNode = document.querySelector('#grand-node')
   
-  while (currentNode.children.length === 0) {
+  while (currentNode.children.length !== 0) {
     console.log(currentNode)
     currentNode = currentNode.children[0]
   }
