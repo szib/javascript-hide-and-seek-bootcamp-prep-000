@@ -19,7 +19,7 @@ function deepestChild() {
   
   while (currentNode.children.length === 0) {
     console.log(currentNode)
-    currentNode = currentNode.children
+    currentNode = currentNode.children[0]
   }
   
   return currentNode
