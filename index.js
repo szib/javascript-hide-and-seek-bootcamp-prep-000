@@ -4,6 +4,8 @@ function getFirstSelector(selector) {
 
 function nestedTarget(target, nested) {
   var n = document.querySelector(`#nested`);
-  console.log(n)
+  var t = n.querySelectorAll(`.target`)
+  console.log(t)
+  return t
   // .querySelectorAll(`.${target}`)
 }
